@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description about about us page" content="this page contain about us page">
+    <title>contactus trendiotime</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            padding: 25px;
+            /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+            /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            /* by doing this underline remove */
+            color: #3d3d3d;
+
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 25px;
+            border: 2px solid;
+        }
+
+        .logo span {
+            color: #9c9c9c;
+        }
+
+        .container {
+            max-width: 1300px;
+
+            margin: auto;
+            padding-right: 30px;
+            padding-left: 35px;
+            /* position: sticky; */
+
+
+        }
+
+        p {
+            color: #3d3d3d;
+        }
+
+        nav li {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .footer {
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+
+        .footer-data {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-data h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-data h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e9a21e;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-data ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-data ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav ul li a:hover {
+            /* create effect on when cursor goes to nav link */
+            height: 85px;
+            background-color: rgb(201, 142, 15);
+            transition: 0.3s ease;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header> -->
+    <div class="container">
+        <!-- /* this is parent of nav,logo */ -->
+        <div class="nav">
+            <div class="logo">TT <span>TRENDIO TIMES</span></div>
+            <nav>
+                <ul>
+                    <li><a href="HOMEPAGE.HTML">HOME</a></li>
+                    <li><a href="PRODUCTS.HTML">PRODUCTS</a></li>
+                    <li><a href="blog1.html">BLOG</a></li>
+                    <li><a href="researches.html">REASEARCH</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+
+
+                </ul>
+            </nav>
+            <img src="img/shopping-cart.png" alt="" width="30px" height="30px">
+            <img src="img/login (1).png" alt="" width="30px" height="30px" style="margin-left: 25px;">
+
+        </div>
+    </div>
+   
+    <!-- <div style="margin-left: 1100px;">
+                    
+        <input type="search" name="placeholder" id="" style= "
+      border-radius: 5px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      width: 200px;
+      color: rgb(0, 0, 0);
+      background-color: #e9dc1e;
+      
+      " placeholder="search here">
+     
+    </div> -->
+    <br>
+  
+    <section>
+        <!-- ---------using lnline css------------ -->
+        <div class="container" style="width: 90%; margin-bottom: 100px; max-width: 1200px; margin: auto; display: flex; justify-content: center; align-items: center; flex-grow: 1;">
+            <div class="form-container" style="flex: 1; background-color: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+              <h1 style="text-align: center; color: #333; margin-bottom: 20px;">Contact Us</h1>
+              <form class="contact-form" style="margin-top: 30px;">
+                <div class="form-group" style="margin-bottom: 20px;">
+                  <label for="firstname" style="display: block; font-weight: bold; color: #333; margin-bottom: 5px;">First Name:</label>
+                  <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                  <label for="lastname" style="display: block; font-weight: bold; color: #333; margin-bottom: 5px;">Last Name:</label>
+                  <input type="text" id="lastname" name="lastname" placeholder="Enter your last name"  style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                  <label for="email" style="display: block; font-weight: bold; color: #333; margin-bottom: 5px;">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email"  style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                  <label for="message" style="display: block; font-weight: bold; color: #333; margin-bottom: 5px;">Message:</label>
+                  <textarea id="message" name="message" placeholder="Enter your message"  style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-top: 5px; height: 150px;"></textarea>
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                  <input type="submit" value="Submit" style="background-color: #642901; padding: 15px; width: 100%; font-size: large; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+                </div>
+              </form>
+            </div>
+            <!--branches-->
+            <div class="details" style="flex: 1; margin-left: 40px;">
+              <h1 style="text-align: center; color: #333; margin-bottom: 20px;">Our Branches</h1>
+              <div class="branch" style="margin-bottom: 20px;">
+                <h2 style="color: #333; margin-bottom: 10px;">Birgunj Branch</h2>
+                <p style="color: #666; margin-bottom: 5px;">Email: birgunj.trendiotime.com</p>
+                <p style="color: #666; margin-bottom: 5px;">Address: Birgunj,Link Road</p>
+                <p style="color: #666; margin-bottom: 5px;">Contact: +977-9826749418</p>
+              </div>
+              <div class="branch" style="margin-bottom: 20px;">
+                <h2 style="color: #333; margin-bottom: 10px;">Kathmandu Branch</h2>
+                <p style="color: #666; margin-bottom: 5px;">Email: kathmandu.trendiotime.com</p>
+                <p style="color: #666; margin-bottom: 5px;">Address: Kathmandu, Bagmati</p>
+                <p style="color: #666; margin-bottom: 5px;">Contact: +977-9821166498</p>
+              </div>
+              <div class="branch" style="margin-bottom: 20px;">
+                <h2 style="color: #333; margin-bottom: 10px;">Pokhara Branch</h2>
+                <p style="color: #666; margin-bottom: 5px;">Email: pokhara.trendiotime.com</p>
+                <p style="color: #666; margin-bottom: 5px;">Address: Pokhara, Gandaki</p>
+                <p style="color: #666; margin-bottom: 5px;">Contact: +977-9807264038</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-data">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>Links</h4>
+                    <!-- this is for important link -->
+                    <ul>
+
+                        <li><a href="blog1.html">Blog</a></li>
+                        <li><a href="PRODUCTS.HTML">Products</a></li>
+                        <li><a href="contactus.html">Contacts us</a></li>
+                        <li><a href="researches.html">Reasearch</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <!-- here use socail media link -->
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <div class="playstore">
+                        <br>
+                        <br>
+                        <h4>
+                            Download Now
+
+                        </h4>
+                        <p style="color: white;">From Play store or Apple Store</p>
+                        <div class="picplay">
+                            <img class="play" src="img/1000008419.jpg" alt="">
+                            <img class="play" src="img/1000008417.jpg" alt="">
+                        </div>
+                        <p style="color: white;">Payment Options</p>
+                        <img src="img/1000008418.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+        <footer style="text-align: center; color: white; font-family: 'Courier New', Courier, monospace;">© Copyright
+            2025 TRENDIO TIME</footer>
+
+    </footer>
+
+</body>
+
+</html>
+<script src="java\contact.js">
+    
+</script>

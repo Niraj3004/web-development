@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-trendiotime</title>
+    <meta name="description about blog page" content="this page contain blog page">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            padding: 25px;
+            /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+            /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            /* by doing this underline remove */
+            color: #3d3d3d;
+
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 25px;
+            border: 2px solid;
+        }
+
+        .logo span {
+            color: #9c9c9c;
+        }
+
+        .container {
+            max-width: 1300px;
+
+            margin: auto;
+            padding-right: 30px;
+            padding-left: 35px;
+            /* position: sticky; */
+
+
+        }
+
+        p {
+            color: #3d3d3d;
+        }
+
+        nav li {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .footer {
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+
+        .footer-data {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-data h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-data h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e9a21e;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-data ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-data ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav ul li a:hover {
+            /* create effect on when cursor goes to nav link */
+            height: 85px;
+            background-color: rgb(201, 142, 15);
+            transition: 0.3s ease;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        /* Internal CSS for blog page */
+        .blog-post {
+            margin-top: 20px;
+            padding: 20px;
+            display: flex;
+        }
+
+        .blog-post .image {
+            flex: 0 0 40%;
+            margin-right: 20px;
+        }
+
+        .blog-post .image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .blog-post .content {
+            flex: 1;
+        }
+
+        .blog-post {
+            display: flex;
+        }
+
+        .blog-post h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .blog-post p {
+            color: #817777;
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* --------end here css for blog post-------- */
+
+
+        /* -----blogging post css------ */
+        #blogging{
+            padding: 150px 150px 0 150px;
+           
+        }
+        .blogging-image{
+            width: 50%;
+            margin-right: 40px;
+           
+        }
+
+        .blogging-image img{
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header> -->
+    <div class="container">
+        <!-- /* this is parent of nav,logo */ -->
+        <div class="nav">
+            <div class="logo">TT <span>TRENDIO TIMES</span></div>
+            <nav>
+                <ul>
+                    <li><a href="HOMEPAGE.HTML">HOME</a></li>
+                    <li><a href="PRODUCTS.HTML">PRODUCTS</a></li>
+                    <li><a href="blog1.html">BLOG</a></li>
+                    <li><a href="researches.html">REASEARCH</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+
+
+                </ul>
+            </nav>
+            <img src="img/shopping-cart.png" alt="" width="30px" height="30px">
+            <img src="img/login (1).png" alt="" width="30px" height="30px" style="margin-left: 25px;">
+
+        </div>
+    </div>
+
+    <!-- <div style="margin-left: 1100px;">
+
+        <input type="search" name="placeholder" id="" style="
+      border-radius: 5px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      width: 200px;
+      color: rgb(0, 0, 0);
+      background-color: #e9dc1e;
+      
+      " placeholder="search here">
+
+    </div> -->
+    <br>
+
+    <!-- </header> -->
+
+    <div class="blog-post">
+        <div class="image">
+            <img src="img/technology.png" alt="Blog Image" />
+        </div>
+        <div class="content">
+            <!-- Inline CSS -->
+            <h2 style="background-color: rgb(185, 170, 141)">
+                <center>TECHNOLOGY</center>
+            </h2>
+            <!-- what do you mean by online ecommerce technology is explained here -->
+            <p>
+                The field of online business technology utilizes various electronic devices
+                such as computers, smartphones, and websites to facilitate the
+                process of purchasing items. This involves the buying and
+                selling of various goods through online platforms, which allows
+                customers to buy a wide range of best items through the
+                internet.
+            </p>
+            <p>
+                In recent years, there has been a significant increase in the use of
+                ecommerce technology. People are now able to buy their from the
+                comfort of their own homes using their mobile phones or computers.
+                ecommerce
+                technology has also made paying for items easier, as people can
+                now make online payments without having to visit a physical store.
+                By using ecommerce technology, people can save time, money, and
+                effort, while also enjoying a more enjoyable shopping experience.
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- Second content of blog -->
+
+    <div class="blog-post">
+        <div class="content" style="margin-right: 30px">
+            <!-- Inline CSS -->
+            <h2 style="background-color: rgb(185, 170, 141)">
+                <center>POSITIVE IMPACT OF TECHNOLOGY ON WATCH</center>
+            </h2>
+            <!-- what are the positive impact of watch technology is explained here -->
+            <p>
+                Nowadays, technology has become an inseparable part of our daily
+                routine, even in watch shopping. People have access to a variety
+                of technologies, such as online shopping and mobile apps, to
+                purchase their watch and make payments. Thanks to technology,
+                individuals can easily order their desired watch online and technology has greatly developed the watch
+                industry in many way like good accuracy, best features, better quality, affordable price.
+            </p>
+            <p>
+                Because of growing technology modern watches like quartz and smartwatches give time better than older
+                watches and also provide best feature like trach health, fitness and even connect to the phone and also
+                durable. Overall, technology has made watches more useful, stylish and accessible
+            </p>
+        </div>
+        <div class="image" style="margin-top: 20px">
+            <img src="img/positivetech.png" alt="Blog Image" />
+        </div>
+    </div>
+    </div>
+
+    <!-- Third content of blog -->
+
+    <div class="blog-post">
+        <div class="image">
+            <img src="img/negativetech.png" alt="Blog Image" />
+        </div>
+        <div class="content">
+            <!-- Inline CSS -->
+            <h2 style="background-color: rgb(185, 170, 141)">
+                <center>NEGATIVE IMPACT OF TECHNOLOGY</center>
+            </h2>
+            <!-- what are the negative impact of watch technology is explained here -->
+            <p>
+                Although technology has brought numerous benefits to
+                people's lives, it also has some drawbacks that have led to various
+                problems. like those run small and wholesale business of watch it displace by online technology it
+                hamper the person individually. Additionally, not everyone has access to the internet, mobile phones.
+            </p>
+            <p>
+                Additionally, Technology has bought some problem to the watches industry like:
+                <li>less battery in smartwatches</li>
+                <li>environmental concerns</li>
+                <li>market competition</li>
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- Fourth content of blog -->
+
+
+    <div class="blog-post">
+        <div class="content" style="margin-right: 30px">
+            <!-- Inline CSS -->
+            <h2 style="background-color: rgb(12, 187, 79)">
+                <center>Consumer Trends</center>
+            </h2>
+            <!-- How has grocery technology affected daily life of people is explained here -->
+            <p>
+                watch technology has become increasingly important for modern
+                shopping experiences due to its convenience. Many people prefer to
+                purchase watches from online platforms because it saves time by
+                eliminating the need to visit physical stores. This technology has
+                made it easier for both retailers and consumers through online
+                delivery and purchase of watch items.
+                <br>
+            <p> Additionally, Consumer trends in the watch industry have been more importantize because in modern watch
+                we can able to chech our health, heart rate and easy to call and also able to play app directly and easy
+                to personalization & customiation. But overall modern watch rule the watch industry and traditional
+                watch hold it emotional values.</p>
+        </div>
+        
+       
+    </div>
+    <br>
+    <h1 style="text-align: center; background-color: #e9dc1e;">Some News</h1>
+    <section id="blogging">
+        <div class="blogging-box">
+            <div class="blogging-image">
+                <img src="img/news1.png" alt="">
+            </div>
+            <div class="blogging-details">
+                <h4>Health & Fitness Tracking</h4>
+                <p>Nowadays, smartwatches offers advance health-monitoring features like ECG, BP,stress management,
+                    sleep analysis.....</p>
+                    <br>
+                    <a style="background-color: red; color: white; border-radius: 5px; padding:1px;" href="">Read More</a>
+                    <br>
+            </div>
+         
+        </div>
+    </section>
+    <!-- <br> -->
+    <section id="blogging">
+        <div class="blogging-box">
+            <div class="blogging-image">
+                <img src="img/news2.png" alt="">
+            </div>
+            <div class="blogging-details">
+                <h4>Easy to customization and Personalization</h4>
+                <p>smartwatches offers various features to personalize their watches by using different wallpaper, applications, animation effects.....</p>
+                    <br>
+                    <a style="background-color: red; color: white; border-radius: 5px; padding:1px;" href="">Read More</a>
+                    <br>
+            </div>
+         
+        </div>
+    </section>
+    <br>
+    <section id="page" class="list">
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href=""><i class="fa fa-long-arrow-right"></i></a>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-data">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>Links</h4>
+                    <!-- this is for important link -->
+                    <ul>
+
+                        <li><a href="blog1.html">Blog</a></li>
+                        <li><a href="PRODUCTS.HTML">Products</a></li>
+                        <li><a href="contactus.html">Contacts us</a></li>
+                        <li><a href="researches.html">Reasearch</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <!-- here use socail media link -->
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <div class="playstore">
+                        <br>
+                        <br>
+                        <h4>
+                            Download Now
+
+                        </h4>
+                        <p style="color: white;">From Play store or Apple Store</p>
+                        <div class="picplay">
+                            <img class="play" src="img/1000008419.jpg" alt="">
+                            <img class="play" src="img/1000008417.jpg" alt="">
+                        </div>
+                        <p style="color: white;">Payment Options</p>
+                        <img src="img/1000008418.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+        <footer style="text-align: center; color: white; font-family: 'Courier New', Courier, monospace;">© Copyright
+            2025 TRENDIO TIME</footer>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="productDescription" content="this page describe product">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    /* by doing this underline remove */
+    color: #3d3d3d;
+
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px solid;
+}
+
+.logo span {
+    color: #9c9c9c;
+}
+
+.container {
+    max-width: 1300px;
+
+    margin: auto;
+    padding-right: 30px;
+    padding-left: 35px;
+    /* position: sticky; */
+
+
+}
+
+p {
+    color: #3d3d3d;
+}
+
+nav li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-data{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-data h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-data h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e9a21e;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-data ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-data ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.social-links a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+nav ul li a:hover {
+    /* create effect on when cursor goes to nav link */
+    height: 85px;
+    background-color: rgb(201, 142, 15);
+    transition: 0.3s ease;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* --------css for desc------ */
+.product-container {
+        display: flex;
+
+        max-width: 1200px;
+
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .product-image {
+        flex: 1;
+        width: 50%;
+        height: 50%;
+      }
+
+      .product-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .product-info {
+        flex: 1;
+        padding: 0 60px;
+        margin-left: 20%;
+      }
+
+      h1 {
+        color: #333;
+        font-size: 48px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .product-info h2 {
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .product-info p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+
+      .add-quantity {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .add-quantity input {
+        width: 50px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- /* this is parent of nav,logo */ -->
+            <div class="nav">
+                <div class="logo">TT <span>TRENDIO TIMES</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="HOMEPAGE.HTML">HOME</a></li>
+                        <li><a href="PRODUCTS.HTML">PRODUCTS</a></li>
+                        <li><a href="blog1.html">BLOG</a></li>
+                        <li><a href="researches.html">REASEARCH</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+    
+    
+                    </ul>
+                </nav>
+                <img src="img/shopping-cart.png" alt="" width="30px" height="30px">
+                <img src="img/login (1).png" alt="" width="30px" height="30px" style="margin-left: 25px;">
+    
+            </div>
+        </div>
+    </header>
+    <!-- -----header end------ -->
+      <!-- header ends-->
+    <h1>Product Details</h1>
+    <!-- Product Details Section -->
+    <div class="product-container">
+      <div class="product-image">
+        <img id="productImage" src="productimg\2.png" alt="Product Image" />
+      </div>
+
+      <div class="product-info">
+        <h2 id="productName">Rolex GMT-Master II</h2>
+        <p id="productDescription"> 
+
+        </p> 
+             <table>
+            <tr>
+                <th>Feature</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Model Case</td>
+                <td>Oyster, 40 mm, Oystersteel</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>Black, blue, white</td>
+            </tr>
+            
+            <tr>
+                <td>Power Reserve</td>
+                <td>Approximately 70 hours full</td>
+            </tr>
+            <tr>
+                <td>Water Resistance</td>
+                <td>100 meters / 330 feet</td>
+            </tr>
+           
+            <tr>
+                <td>cover</td>
+                <td>outer leather</td>
+            </tr>
+            <tr>
+                <td>Functions</td>
+                <td>GMT, date, dual time zones</td>
+            </tr>
+            
+        </table>
+    
+        </p>
+        <div class="add-quantity">
+          <input type="number" id="quantity" value="1" min="1" />
+          <button style="cursor: pointer;" id="addToCart">Add to Cart</button>
+        </div>
+        <p class="price" id="productPrice"></p>
+      </div>
+    </div>
+ <!-- i use id to implement js but i face problem so i leave it -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-data">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>Links</h4>
+                    <!-- this is for important link -->
+                    <ul>
+                        <li><a href="blog1.html">Blog</a></li>
+                        <li><a href="PRODUCTS.HTML">Products</a></li>
+                        <li><a href="contactus.html">Contacts us</a></li>
+                        <li><a href="researches.html">Reasearch</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <!-- here use socail media link -->
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <div class="playstore">
+                        <br>
+                        <br>
+                        <h4>
+                            Download Now
+                            
+                        </h4>
+                        <p style="color: white;">From Play store or Apple Store</p>
+                        <div class="picplay">
+                            <img class="play" src="img/1000008419.jpg" alt="">
+                            <img class="play" src="img/1000008417.jpg" alt="">
+                        </div>
+                        <p style="color: white;">Payment Options</p>
+                        <img src="img/1000008418.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+        <footer style="text-align: center; color: white; font-family: 'Courier New', Courier, monospace;">© Copyright
+            2025 TRENDIO TIME</footer>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description about about us page" content="this page contain about us page">
+    <title>About-us trendiotimr</title>
+    <link rel="stylesheet" href="css/css.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            padding: 25px;
+            /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+            /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            /* by doing this underline remove */
+            color: #3d3d3d;
+
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 25px;
+            border: 2px solid;
+        }
+
+        .logo span {
+            color: #9c9c9c;
+        }
+
+        .container {
+            max-width: 1300px;
+
+            margin: auto;
+            padding-right: 30px;
+            padding-left: 35px;
+            /* position: sticky; */
+
+
+        }
+
+        p {
+            color: #3d3d3d;
+        }
+
+        nav li {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .aboutus-container {
+            display: flex;
+
+
+        }
+
+
+
+        .heading h1,
+        .review h1 {
+            color: orange;
+            font-size: 55px;
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .about-content {
+
+            width: 600px;
+            margin: 0px 25px;
+
+        }
+
+        .about-content h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: #333
+        }
+
+        .about-content p {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .about-content button {
+            background-color: #ff4500;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .about-content button:hover {
+            background-color: #f55e43;
+            transform: scale(1.1);
+        }
+
+        .about-image {
+
+            width: 600px;
+            margin-left: 150px;
+
+        }
+
+
+        .container .left_side {
+           
+            background: rgb(231, 215, 123);
+            padding: 40px;
+        }
+
+        .profiletext {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .profiletext .imgbx {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profiletext .imgbx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+
+        }
+
+        .profiletext h2 {
+            color: b;
+            font-size:20px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4px;
+        }
+
+       
+        .contact {
+            padding-top: 40px;
+
+
+        }
+
+        .title {
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+      
+        .contact ul li {
+        
+            list-style: none;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        
+
+        .language {
+            color: black;
+
+        }
+
+        .language .percent {
+            color: black;
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background: white;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .language .percent div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: black;
+        }
+
+
+
+
+        .container .right_side {
+            position: relative;
+            background: white;
+            padding: 40px;
+        }
+
+        .about {
+            margin-top: 50px;
+        }
+
+        p {
+            color: #333;
+        }
+
+      
+     
+        
+        .main-container {
+            padding-top: 30px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 1080px;
+            margin: auto;
+        }
+
+        .person-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+
+        .main-container strong {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            color: #616161;
+        }
+
+        .hide-div {
+            display: none;
+        }
+
+        .show-div {
+            display: flex;
+        }
+
+        .cv-container {
+         
+            background-color: #aab0ee;
+        }
+
+  
+        .title {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #ffa500;
+            margin-bottom: 5px;
+        }
+
+      
+
+        /* ----------FOOTER-------- */
+        .footer {
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+
+        .footer-data {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-data h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-data h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e9a21e;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-data ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-data ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav ul li a:hover {
+            /* create effect on when cursor goes to nav link */
+            height: 85px;
+            background-color: rgb(201, 142, 15);
+            transition: 0.3s ease;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header> -->
+    <div class="container">
+        <!-- /* this is parent of nav,logo */ -->
+        <div class="nav">
+            <div class="logo">TT <span>TRENDIO TIMES</span></div>
+            <nav>
+                <ul>
+                    <li><a href="HOMEPAGE.HTML">HOME</a></li>
+                    <li><a href="PRODUCTS.HTML">PRODUCTS</a></li>
+                    <li><a href="blog1.html">BLOG</a></li>
+                    <li><a href="researches.html">REASEARCH</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+
+
+                </ul>
+            </nav>
+            <img src="img/shopping-cart.png" alt="" width="30px" height="30px">
+            <img src="img/login (1).png" alt="" width="30px" height="30px" style="margin-left: 25px;">
+
+        </div>
+    </div>
+
+    <!-- <div style="margin-left: 1100px;">
+
+        <input type="search" name="placeholder" id="" style="
+      border-radius: 5px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      width: 200px;
+      color: rgb(0, 0, 0);
+      background-color: #e9dc1e;
+      
+      " placeholder="search here">
+
+    </div> -->
+    <br>
+
+    <header>
+        <section class="about">
+            <div class="heading-container">
+                <div class="heading">
+                    <h1>About Us</h1>
+                </div>
+
+            </div>
+            </div><!-- aboutus content-->
+            <div class="aboutus-container">
+                <div class="about-content" style="text-align: justify;">
+                    <h2>Welcome to our about us page</h2>
+                    <p>Our aim is to offer you best quality watches which show you that we really good! Not only have we
+                        got the trendiest
+                        watches, but we can also guarantee that they are of the finest quality.
+
+                        We started as a business and our aim is to continue providing our customers with products that
+                        keep them
+                        happy, at prices that keep them happy.
+
+                        Our customers are our top priority and through our products we work hard towards building
+                        long-lasting and
+                        meaningful relations with them.</p>
+                    <button>Learn more</button><!--button-->
+                </div>
+                <div class="about-image">
+                    <img src="img\logo2.1.png"><!--img-->
+                </div>
+            </div>
+            <!-- team members-->
+            <section>
+                <div class="review">
+                    <h1>Meet Our Team Members</h1>
+                </div>
+            </section>
+            <section>
+                <div class="main-container">
+                    <!-- person 1-->
+                    <div class="person1" style="cursor:pointer;">
+                        <img class="person-img" src="img/person1.png"
+                            onclick="showCV('person1')">
+                        <strong>Niraj Kushwaha</strong>
+                    </div>
+                    <!--person 2-->
+                    <div class="person2" style="cursor:pointer;">
+                        <img class="person-img" src="img/person2.jpg"
+                            onclick="showCV('person2')">
+                        <strong>Alaka Prasai</strong>
+                    </div>
+                    <!--person 3-->
+                    <div class="person3"  style="cursor:pointer;">
+                        <img class="person-img" src="img/person3.jpg"
+                            onclick="showCV('person3')">
+                        <strong>Meetej Saru Magar</strong>
+                    </div>
+                    <!--person 4-->
+                    <div class="person4"style="cursor:pointer;">
+                        <img class="person-img" src="img/person4.jpg" onclick="showCV('person4')">
+                        <strong>Prajita Simkhada</strong>
+                    </div>
+                </div>
+                <!-- cv -->
+                <div class="cv-container">
+                    <div id="person1" class="person container hide-div">
+                        <div class="left_side">
+                            <div class="profiletext">
+                                <div class="imgbx">
+                                    <img src="img/person1.png" />
+                                    <!--person 1 img-->
+                                </div>
+                                <h2>Niraj kushwaha</h2><!--person name-->
+                                <br />
+                            </div>
+                            <div class="contact">
+                                <h3 class="title">Personal Info</h3>
+                                <ul>
+                                    <li>
+                                       
+                                        <span class="text">+977 9821166498</span>
+                                    </li>
+                                    <li>
+                                            <div class="side-icon" style="display: flex">
+                                            
+                                            <span class="text">nirajkushwaha3008@gmail.com</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                  
+                                        <span class="text">www.mywebsite.com</span>
+                                    </li>
+                                    <li>
+                                        <div class="side-icon" style="display: flex">
+                                           
+                                            <span class="text">Address: Birgunj Nepal</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="contactinfo">
+                                <!-- education-->
+                                <h3 class="title">Education</h3>
+                                <ul>
+                                    <li>
+                                        <h5>Bsc(hons) computing</h5>
+                                        <h4>Islington College</h4>
+                                        <h4>2024-present</h4>
+                                    </li>
+                                    <li>
+                                        <h5>Science(com)</h5>
+                                        <h4>National Infotech Secondary School</h4>
+                                        <h4>2022-2024</h4>
+                                    </li>
+                                    <li>
+                                        <h5>SEE</h5>
+                                        <h4> Himalayan Secondary School</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--languages-->
+                            <div class="language">
+                                <h3 class="title">Languages</h3>
+                                <ul>
+                                    <li>
+                                        <span class="text">Nepali</span>
+                                        <span class="percent">
+                                            <div style="width: 100%"> </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text">English</span>
+                                        <span class="percent">
+                                            <div style="width: 80%"></div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text">Hindi</span>
+                                        <span class="percent">
+                                            <div style="width: 60%"></div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="right_side">
+                            <div class="about">
+                                <!--experience-->
+                                <h2 class="Experience">Profile</h2>
+                                <p>
+                                    I am Niraj kushwaha, currently Studying Bsc (hons)Computing at Islington College.I
+                                    originally come from
+                                    Birgunj but I currently reside in Kathmandu due to my studies.
+                                    Worked as a wordpress developer.
+                                </p>
+                            </div>
+                            <div class="about skills">
+                                <h2 class="Experience">Training/Skills</h2>
+                                <div class="box">
+                                    <h4>HTML</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>CSS</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>Wireframe Designing</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>SQL</h4>
+                                    <div class="percent"></div>
+                                </div>
+                            </div>
+                            <div class="about interest"><!--interest-->
+                                <h2 class="Experience">Interest</h2>
+                                <ol>
+                                    <li>coding</li>
+                                    <li>cricket</li>
+                                    <li>Reading</li>
+                                    <li>Cooking</li>
+                                    <Li> listening Music</Li>
+                                </ol>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- -----person2----- -->
+                    <div id="person2" class="person container hide-div">
+                        <div class="left_side">
+                            <div class="profiletext">
+                                <div class="imgbx">
+                                    <img src="img/person2.jpg" />
+                                    <!--person 2 img-->
+                                </div>
+                                <h2>Alaka Prasai</h2><!--person name-->
+                                <br />
+                            </div>
+                            <div class="contact">
+                                <h3 class="title">Personal Info</h3>
+                                <ul>
+                                    <li>
+                                       
+                                        <span class="text">+977 9817089760</span>
+                                    </li>
+                                    <li>
+                                            <div class="side-icon" style="display: flex">
+                                            
+                                            <span class="text">alkaprasai1@gmail.com</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                  
+                                        <span class="text">www.mywebsite.com</span>
+                                    </li>
+                                    <li>
+                                        <div class="side-icon" style="display: flex">
+                                           
+                                            <span class="text">Address: kathmandu Nepal</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="contactinfo">
+                                <!-- education-->
+                                <h3 class="title">Education</h3>
+                                <ul>
+                                    <li>
+                                        <h5>Bsc(hons) computing</h5>
+                                        <h4>Islington College</h4>
+                                        <h4>2024-present</h4>
+                                    </li>
+                                    <li>
+                                        <h5>Science(bio)</h5>
+                                        <h4>Prasadi Academy</h4>
+                                        <h4>2022-2024</h4>
+                                    </li>
+                                    <li>
+                                        <h5>SEE</h5>
+                                        <h4> St.Xaviers School</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--languages-->
+                            <div class="language">
+                                <h3 class="title">Languages</h3>
+                                <ul>
+                                    <li>
+                                        <span class="text">Nepali</span>
+                                        <span class="percent">
+                                            <div style="width: 100%"> </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text">English</span>
+                                        <span class="percent">
+                                            <div style="width: 80%"></div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text">Hindi</span>
+                                        <span class="percent">
+                                            <div style="width: 60%"></div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="right_side">
+                            <div class="about">
+                                <!--experience-->
+                                <h2 class="Experience">Profile</h2>
+                                <p>
+                                    I am Alaka Prasai , currently Studying Bsc (hons)Computing at Islington College.I
+                                    originally come from
+                                    Birgunj but I currently reside in Kathmandu due to my studies.
+                                    Worked as a wordpress developer.
+                                </p>
+                            </div>
+                            <div class="about skills">
+                                <h2 class="Experience">Training/Skills</h2>
+                                <div class="box">
+                                    <h4>HTML</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>CSS</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>Wireframe Designing</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>SQL</h4>
+                                    <div class="percent"></div>
+                                </div>
+                            </div>
+                            <div class="about interest"><!--interest-->
+                                <h2 class="Experience">Interest</h2>
+                                <ol>
+                                    <li>coding</li>
+                                    <li>cricket</li>
+                                    <li>Reading</li>
+                                    <li>Cooking</li>
+                                    <Li> listening Music</Li>
+                                </ol>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- person3 cv-------------- -->
+                    <div id="person3" class="person container hide-div">
+                        <div class="left_side">
+                            <div class="profiletext">
+                                <div class="imgbx">
+                                    <img src="img/person3.jpg" />
+                                    <!--person 3 img-->
+                                </div>
+                                <h2>Meetej Magar</h2> <!--person name-->
+                                <br />
+                            </div>
+                            <div class="contact">
+                                <h3 class="title">Personal Info</h3>
+                                <ul>
+                                    <li>
+                                       
+                                        <span class="text">+977 9829666799</span>
+                                    </li>
+                                    <li>
+                                            <div class="side-icon" style="display: flex">
+                                            
+                                            <span class="text">meetej108@gmail.com</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                  
+                                        <span class="text">www.mywebsite.com</span>
+                                    </li>
+                                    <li>
+                                        <div class="side-icon" style="display: flex">
+                                           
+                                            <span class="text">Address: Kathmandu Nepal</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="contactinfo">
+                                <!-- education-->
+                                <h3 class="title">Education</h3>
+                                <ul>
+                                    <li>
+                                        <h5>Bsc(hons) computing</h5>
+                                        <h4>Islington College</h4>
+                                        <h4>2024-present</h4>
+                                    </li>
+                                    <li>
+                                        <h5>Science(com)</h5>
+                                        <h4>Modern Public Secondary School</h4>
+                                        <h4>2021-2023</h4>
+                                    </li>
+                                    <li>
+                                        <h5>SEE</h5>
+                                        <h4> Sagarmatha Secondary School</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--languages-->
+                            <div class="language">
+                                <h3 class="title">Languages</h3>
+                                <ul>
+                                    <li>
+                                        <span class="text">Nepali</span>
+                                        <span class="percent">
+                                            <div style="width: 100%"> </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text">English</span>
+                                        <span class="percent">
+                                            <div style="width: 80%"></div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text">Hindi</span>
+                                        <span class="percent">
+                                            <div style="width: 60%"></div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="right_side">
+                            <div class="about">
+                                <!--experience-->
+                                <h2 class="Experience">Profile</h2>
+                                <p>
+                                    I am Meetej Saru Magar, currently Studying Bsc (hons)Computing at Islington College.I
+                                    originally come from
+                                    Nepalgunj but I currently reside in Kathmandu due to my studies.
+                                    Not working yet.
+                                </p>
+                            </div>
+                            <div class="about skills">
+                                <h2 class="Experience">Training/Skills</h2>
+                                <div class="box">
+                                    <h4>HTML</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>CSS</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>Wireframe Designing</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>SQL</h4>
+                                    <div class="percent"></div>
+                                </div>
+                            </div>
+                            <div class="about interest"><!--interest-->
+                                <h2 class="Experience">Interest</h2>
+                                <ol>
+                                    <li>coding</li>
+                                    <li>cricket</li>
+                                    <li>Reading</li>
+                                    <li>Cooking</li>
+                                    <Li> listening Music</Li>
+                                </ol>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="person4" class="person container hide-div">
+                        <div class="left_side">
+                            <div class="profiletext">
+                                <div class="imgbx">
+                                    <img src="img/person4.jpg" />
+                                    <!--person 4 img-->
+                                </div>
+                                <h2>Prajita Simkhada</h2><!--person name-->
+                                <br />
+                            </div>
+                            <div class="contact">
+                                <h3 class="title">Personal Info</h3>
+                                <ul>
+                                    <li>
+                                       
+                                        <span class="text">+977 9811146273</span>
+                                    </li>
+                                    <li>
+                                            <div class="side-icon" style="display: flex">
+                                            
+                                            <span class="text">prajitasimkhada@gmail.com</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                  
+                                        <span class="text">www.mywebsite.com</span>
+                                    </li>
+                                    <li>
+                                        <div class="side-icon" style="display: flex">
+                                           
+                                            <span class="text">Address: Kathmandu Nepal</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="contactinfo">
+                                <!-- education-->
+                                <h3 class="title">Education</h3>
+                                <ul>
+                                    <li>
+                                        <h5>Bsc(hons) computing</h5>
+                                        <h4>Islington College</h4>
+                                        <h4>2024-present</h4>
+                                    </li>
+                                    <li>
+                                        <h5>Science(bio)</h5>
+                                        <h4>Chelsea world School</h4>
+                                        <h4>2022-2024</h4>
+                                    </li>
+                                    <li>
+                                        <h5>SEE</h5>
+                                        <h4> Vidhya Sanskar School</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--languages-->
+                            <div class="language">
+                                <h3 class="title">Languages</h3>
+                                <ul>
+                                    <li>
+                                        <span class="text">Nepali</span>
+                                        <span class="percent">
+                                            <div style="width: 100%"> </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text">English</span>
+                                        <span class="percent">
+                                            <div style="width: 80%"></div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text">Hindi</span>
+                                        <span class="percent">
+                                            <div style="width: 60%"></div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="right_side">
+                            <div class="about">
+                                <!--experience-->
+                                <h2 class="Experience">Profile</h2>
+                                <p>
+                                    I am Prajita Simkhada, currently Studying Bsc (hons)Computing at Islington College.I
+                                    originally come from
+                                    Chitwan but I currently reside in Kathmandu due to my studies.
+                                    currently not working yet.
+                                </p>
+                            </div>
+                            <div class="about skills">
+                                <h2 class="Experience">Training/Skills</h2>
+                                <div class="box">
+                                    <h4>HTML</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>CSS</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>Wireframe Designing</h4>
+                                    <div class="percent"></div>
+                                </div>
+                                <div class="box">
+                                    <h4>SQL</h4>
+                                    <div class="percent"></div>
+                                </div>
+                            </div>
+                            <div class="about interest"><!--interest-->
+                                <h2 class="Experience">Interest</h2>
+                                <ol>
+                                    <li>coding</li>
+                                    <li>Reading</li>
+                                    <li>Cooking</li>
+                                    <Li> listening Music</Li>
+                                </ol>
+                            </div>
+                        </div>
+
+                    </div>
+                   
+
+                    </div>
+                </diV>
+            </section>
+        </section>
+
+
+    </header>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-data">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>Links</h4>
+                    <!-- this is for important link -->
+                    <ul>
+
+                        <li><a href="blog1.html">Blog</a></li>
+                        <li><a href="PRODUCTS.HTML">Products</a></li>
+                        <li><a href="contactus.html">Contacts us</a></li>
+                        <li><a href="researches.html">Reasearch</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <!-- here use socail media link -->
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <div class="playstore">
+                        <br>
+                        <br>
+                        <h4>
+                            Download Now
+
+                        </h4>
+                        <p style="color: white;">From Play store or Apple Store</p>
+                        <div class="picplay">
+                            <img class="play" src="img/1000008419.jpg" alt="">
+                            <img class="play" src="img/1000008417.jpg" alt="">
+                        </div>
+                        <p style="color: white;">Payment Options</p>
+                        <img src="img/1000008418.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+        <footer style="text-align: center; color: white; font-family: 'Courier New', Courier, monospace;">© Copyright
+            2025 TRENDIO TIME</footer>
+
+    </footer>
+
+</body>
+
+</html>
+<script>
+    // Function to show CV of a each person
+    function showCV(person) {
+      var persons = document.querySelectorAll('.person');
+      persons.forEach((person) => {
+        person.classList.remove("show-div");
+        person.classList.add("hide-div");
+      });
+  
+      var personToShow = document.getElementById(person);
+      personToShow.classList.add("show-div");
+      personToShow.classList.remove("hide-div");
+    }
+  
+  </script>

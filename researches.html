@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description about Research page" content="this page contain Research page">
+    <title>Research trendio time</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            padding: 25px;
+            /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+            /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            /* by doing this underline remove */
+            color: #3d3d3d;
+
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 25px;
+            border: 2px solid;
+        }
+
+        .logo span {
+            color: #9c9c9c;
+        }
+
+        .container {
+            max-width: 1300px;
+
+            margin: auto;
+            padding-right: 30px;
+            padding-left: 35px;
+            /* position: sticky; */
+
+
+        }
+
+        p {
+            color: #3d3d3d;
+        }
+
+        nav li {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .footer {
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+
+        .footer-data {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-data h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-data h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e9a21e;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-data ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-data ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav ul li a:hover {
+            /* create effect on when cursor goes to nav link */
+            height: 85px;
+            background-color: rgb(201, 142, 15);
+            transition: 0.3s ease;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .imgre{
+        width: 450px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .table1{
+        width: 80%;
+        margin: auto;
+    }
+    .table2{
+        width: 50%;
+       margin: auto;
+       height: 70%;
+       border-radius: 2%;
+    }
+
+
+      .table1 img{
+        border-radius: 7%;
+        border-color:black;
+        border-width: 2px;
+        border-style:solid;
+        box-shadow: #7dcc83;
+      }
+
+   .table1 td{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: grey;
+   }
+
+   .table1 th{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+   }
+
+   .table2 th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    
+   }
+
+   p{      /* For all pages */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: grey;
+    line-height: 1.6;
+     margin-bottom: 15px
+   }
+
+.table2 td{
+    background-color: white;
+    color: grey;
+   font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+   /* for product page */
+   .table3{
+        width: 80%;
+        margin: auto;
+
+    }
+    .table4{
+        width: 50%;
+       margin: auto;
+       height: 70%;
+       border-radius: 2%;
+    }
+
+    .table3 img{
+   
+        border-radius: 7%;
+        border-color:black;
+        border-width: 2px;
+        border-style:solid;
+        box-shadow: #7dcc83;
+}
+   .table3 td{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: grey;
+    
+   }
+   .table3 th{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+   }
+   .table4 th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: medium;
+   }
+ 
+.table4 td{
+    background-color: white;
+    color: grey;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+       
+/* Internal CSS for Blog page */
+    .table5{
+        width: 80%;
+        margin: auto;
+    }
+     .table6{
+        width: 50%;
+       margin: auto;
+       height: 70%;
+       border-radius: 2%;
+     }
+    .table5 img{
+        border-radius: 7%;
+        border-color:black;
+        border-width: 2px;
+        border-style:solid;
+        box-shadow: #7dcc83;
+     }
+
+    .table5 td{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: grey;
+     }
+
+     .table5 th{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+     }
+
+     .table6 th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+     }
+   
+     .table6 td{
+    background-color: white;
+    color: grey;
+   font-family: Arial, Helvetica, sans-serif;
+     }
+
+
+      /* Internal CSS for Research page */
+
+     .table7{
+        width: 80%;
+        margin: auto;
+    }
+
+    .table8{
+        width: 50%;
+       margin: auto;
+       height: 70%;
+       border-radius: 2%;
+    }
+
+    .table7 img{
+        border-radius: 7%;
+        border-color:black;
+        border-width: 2px;
+        border-style:solid;
+        box-shadow: #7dcc83;
+    }
+   .table7 td{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: grey;
+   }
+
+   .table7 th{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+   }
+
+   .table8 th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+   }
+ 
+   
+  .table8 td{
+    background-color: white;
+    color: grey;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+    /* Internal CSS for About us page */
+
+    .table9{
+        width: 80%;
+        margin: auto;
+    }
+
+    .table10{
+        width: 40%;
+       margin: auto;
+       height: 70%;
+       border-radius: 2%;
+    }
+
+    .table9 img{
+        border-radius: 7%;
+        border-color:black;
+        border-width: 2px;
+        border-style:solid;
+        box-shadow: #7dcc83;
+    }
+
+   .table9 td{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: grey;
+    }
+
+   .table9 th{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    }
+
+   .table10 th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    }
+ 
+   
+   .table10 td{
+    background-color: white;
+    color: grey;
+   font-family: Arial, Helvetica, sans-serif;
+   }
+    </style>
+</head>
+
+<body>
+    <!-- <header> -->
+    <div class="container">
+        <!-- /* this is parent of nav,logo */ -->
+        <div class="nav">
+            <div class="logo">TT <span>TRENDIO TIMES</span></div>
+            <nav>
+                <ul>
+                    <li><a href="HOMEPAGE.HTML">HOME</a></li>
+                    <li><a href="PRODUCTS.HTML">PRODUCTS</a></li>
+                    <li><a href="blog1.html">BLOG</a></li>
+                    <li><a href="researches.html">REASEARCH</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+
+
+                </ul>
+            </nav>
+            <img src="img/shopping-cart.png" alt="" width="30px" height="30px">
+            <img src="img/login (1).png" alt="" width="30px" height="30px" style="margin-left: 25px;">
+
+        </div>
+    </div>
+
+    
+
+    </div>
+    <br>
+    <h1 style="text-align: center;">Research Page</h1>
+    <!-- Inline CSS -->
+    <div class="div1">
+        <!-- Homepage  -->
+        <table class="table1">
+            <tr>
+                <th style="background-color: rgb(255, 0, 0);color: white;" colspan="2">COMPARING OUR "HOMEPAGE" WITH "OTHER
+                    WEBSITE"</th>
+            </tr><br>
+            <tr>
+                <th> HOME PAGE</th>
+                <th> OTHER WEBSITE</th>
+            </tr>
+
+            <tr>
+                <td><img class="imgre" src="img/homepage1.png" alt=""></td>
+                <td><img class="imgre" src="img/homepage2.png" alt=""></td>
+            </tr>
+        </table><br><br>
+
+        <div class="div2">
+            <table class="table2" style="width: 500px;">
+                <tr>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        FEATURES
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        HOME PAGE
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        OTHER WEBSITE
+                    </th>
+                </tr>
+                <td>
+                    Color
+                </td>
+                <td>
+                    Matched
+                </td>
+                <td>
+                   Not-Matched
+                </td>
+                <tr>
+                    <td>
+                        Font
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                <tr>
+                    <td>
+                        Icon
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Header
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Footer
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Button
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+
+
+
+            </table>
+        </div><br><br>
+   <br><br>
+
+        <!-- product page -->
+        <table class="table3">
+            <tr>
+                <th style="background-color: rgb(255, 0, 0);color: white;" colspan="2"> COMPARING OUR "PRODUCTS" PAGE WITH
+                    "OTHER WEBSITE"</th>
+            </tr>
+            <tr>
+                <th> PRODUCTS</th>
+                <th>OTHER WEBSITE</th>
+            </tr>
+            <tr>
+                <td> <img class="imgre" src="img/product1.png" alt=""> </td>
+                <td> <img class="imgre" src="img/product2 (2).png" alt=""></td>
+
+            </tr>
+        </table><br><br>
+
+        <div class="div3">
+            <table class="table4" style="width: 500px;">
+                <tr>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        FEATURES
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        PRODUCT PAGE
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        OTHER
+                    </th>
+                </tr>
+                <td>
+                    Image
+                </td>
+                <td>
+                    Not-Matched
+                </td>
+                <td>
+                    Not-Matched
+                </td>
+                <tr>
+                    <td>
+                        Products
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Footer
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Header
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Design
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Icon
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+
+            </table>
+        </div><br><br>
+     <br><br>
+
+        <!-- Blog page -->
+        <table class="table5">
+            <tr>
+                <th style="background-color: rgb(255, 0, 0);color: white;" colspan="2"> COMPARING OUR "BLOG" PAGE WITH "OTHER
+                    WEBSITE"</th>
+            </tr>
+            <tr>
+                <th> BLOG </th>
+                <th>OTHER WEBSITE</th>
+            </tr>
+            <tr>
+                <td> <img class="imgre" src="img/blog1.png" alt=""> </td>
+                <td> <img class="imgre" src="img/blog2.png" alt=""></td>
+
+            </tr>
+        </table><br><br>
+
+        <div class="div4">
+            <table class="table6" style="width: 500px;">
+                <tr>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        FEATURES
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        BLOG PAGE
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        OTHER WEBSITE
+                    </th>
+                </tr>
+                <td>
+                    Font
+                </td>
+                <td>
+                    Matched
+                </td>
+                <td>
+                    Matched
+                </td>
+                <tr>
+                    <td>
+                        Icon
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Header
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Footer
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Image
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                <tr>
+                    <td>
+                        Search Button
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+                </tr>
+
+            </table>
+        </div><br><br>
+      <br><br>
+
+        <!-- Research page starts -->
+        <table class="table7">
+            <tr>
+                <th style="background-color: rgb(255, 0, 0);color: white;" colspan="2"> COMPARING OUR "RESEARCH" PAGE WITH
+                    "OTHER WEBSITE"</th>
+            </tr>
+            <tr>
+                <th> RESEARCH </th>
+                <th>OTHER WEBSITE</th>
+            </tr>
+            <tr>
+                <td> <img class="imgre" src="img/research1.png" alt=""> </td>
+                <td> <img class="imgre" src="img/research2.png" alt=""></td>
+
+            </tr>
+        </table><br><br>
+
+        <div class="div5">
+            <table class="table8" style="width: 500px;">
+                <tr>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        FEATURES
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        RESEARCH PAGE
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        VEGGIE BASKET
+                    </th>
+                </tr>
+                <td>
+                    Header
+                </td>
+                <td>
+                    Not-Matched
+                </td>
+                <td>
+                    Not-Matched
+                </td>
+                <tr>
+                    <td>
+                        Template
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Font
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Non-Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Comparsion Style
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Description in paragraph
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Non-Matched
+                    </td>
+                </tr>
+            </table>
+        </div><br><br>
+        
+        <!-- ABOUT US page starts -->
+        <table class="table9">
+            <tr>
+                <th style="background-color: rgb(255, 0, 0);color: white;" colspan="2"> COMPARING OUR "ABOUT US" PAGE WITH
+                    "OTHER WEBSITE"</th>
+            </tr>
+            <tr>
+                <th> ABOUT US </th>
+                <th>OTHER WEBSITE</th>
+            </tr>
+            <tr>
+                <td> <img class="imgre" src="img/about1.png" alt=""> </td>
+                <td> <img class="imgre" src="img/about2.png" alt=""></td>
+
+            </tr>
+        </table><br><br>
+
+        <div class="div6">
+            <table class="table10" style="width: 500px;">
+                <tr>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        FEATURES
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        ABOUT US
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        OTHER WEBSITE
+                    </th>
+                </tr>
+                <td>
+                    Image
+                </td>
+                <td>
+                    Not-Matched
+                </td>
+                <td>
+                    Not-Matched
+                </td>
+                <tr>
+                    <td>
+                        Icon
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Design
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Header
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Footer
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Search Button
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+            </table>
+        </div><br><br>
+        <br><br>
+        <table class="table9">
+            <tr>
+                <th style="background-color: rgb(255, 0, 0);color: white;" colspan="2"> COMPARING OUR "CONTACTS US" PAGE WITH
+                    "OTHER WEBSITE"</th>
+            </tr>
+            <tr>
+                <th> CONTACTS US </th>
+                <th>OTHER WEBSITE</th>
+            </tr>
+            <tr>
+                <td> <img class="imgre" src="img/contact2.png" alt=""> </td>
+                <td> <img class="imgre" src="img/contact1.png" alt=""></td>
+
+            </tr>
+        </table><br><br>
+
+        <div class="div6">
+            <table class="table10" style="width: 500px;">
+                <tr>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        FEATURES
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        CONTACTS US
+                    </th>
+                    <th style="background-color: rgb(217, 219, 77);">
+                        OTHER WEBSITE
+                    </th>
+                </tr>
+                <td>
+                    Image
+                </td>
+                <td>
+                    Not-Matched
+                </td>
+                <td>
+                    Not-Matched
+                </td>
+                <tr>
+                    <td>
+                        Icon
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Design
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Header
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Footer
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                    <td>
+                        Matched
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Search Button
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                    <td>
+                        Not-Matched
+                    </td>
+                </tr>
+            </table>
+        </div><br><br>
+        <br><br>
+    </div>
+    <!-- </header> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-data">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>Links</h4>
+                    <!-- this is for important link -->
+                    <ul>
+
+                        <li><a href="blog1.html">Blog</a></li>
+                        <li><a href="PRODUCTS.HTML">Products</a></li>
+                        <li><a href="contactus.html">Contacts us</a></li>
+                        <li><a href="researches.html">Reasearch</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <!-- here use socail media link -->
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <div class="playstore">
+                        <br>
+                        <br>
+                        <h4>
+                            Download Now
+
+                        </h4>
+                        <p style="color: white;">From Play store or Apple Store</p>
+                        <div class="picplay">
+                            <img class="play" src="img/1000008419.jpg" alt="">
+                            <img class="play" src="img/1000008417.jpg" alt="">
+                        </div>
+                        <p style="color: white;">Payment Options</p>
+                        <img src="img/1000008418.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+        <footer style="text-align: center; color: white; font-family: 'Courier New', Courier, monospace;">© Copyright
+            2025 TRENDIO TIME</footer>
+
+    </footer>
+
+</body>
+
+</html>

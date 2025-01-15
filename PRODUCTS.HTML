@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description about product page" content="this page contain product page">
+    <title>product-2/product</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            padding: 25px;
+            /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+            /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            /* by doing this underline remove */
+            color: #3d3d3d;
+
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 25px;
+            border: 2px solid;
+        }
+
+        .logo span {
+            color: #9c9c9c;
+        }
+
+        .container {
+            max-width: 1300px;
+
+            margin: auto;
+            padding-right: 30px;
+            padding-left: 35px;
+            /* position: sticky; */
+
+
+        }
+
+        p {
+            color: #3d3d3d;
+        }
+
+        nav li {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .footer {
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+
+        .footer-data {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-data h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-data h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e9a21e;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-data ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-data ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav ul li a:hover {
+            /* create effect on when cursor goes to nav link */
+            height: 85px;
+            background-color: rgb(201, 142, 15);
+            transition: 0.3s ease;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header> -->
+    <div class="container">
+        <!-- /* this is parent of nav,logo */ -->
+        <div class="nav">
+            <div class="logo">TT <span>TRENDIO TIMES</span></div>
+            <nav>
+                <ul>
+                    <li><a href="HOMEPAGE.HTML">HOME</a></li>
+                    <li><a href="PRODUCTS.HTML">PRODUCTS</a></li>
+                    <li><a href="blog1.html">BLOG</a></li>
+                    <li><a href="researches.html">REASEARCH</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+
+
+                </ul>
+            </nav>
+            <img src="img/shopping-cart.png" alt="" width="30px" height="30px">
+            <img src="img/login (1).png" alt="" width="30px" height="30px" style="margin-left: 25px;">
+
+        </div>
+    </div>
+   
+    <div style="margin-left: 1100px;">
+                    
+        <input type="search" name="placeholder" id="" style= "
+      border-radius: 5px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      width: 200px;
+      color: rgb(0, 0, 0);
+      background-color: #e9dc1e;
+      
+      " placeholder="search here">
+     
+    </div>
+    <br>
+    <header>
+        <img src="img/newbanner.png" alt="" width="100%" height="100%">
+        <section id="productlist" class="list">
+            <h2>New arrival</h2>
+            <p>Winter Offers New Modern design</p>
+            <div class="pro-data">
+                <div class="data">
+                    <img src="productimg\2.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Rolex</span>
+                        <h5>Rolex GMT-Master II</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h4> <S>Rs5999</S> Rs4999</h4>
+                    </div>
+                    <a href="desproduct.html"><span class="fa fa-shopping-cart" style="color: #f10202;">Add To Cart</span></a>
+                </div>
+                <div class="data">
+                    <img src="productimg/3.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Casino</span>
+                        <h5>Casino watch pro</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half"></span>
+                        </div>
+                        <h4> <s>Rs2111</s> Rs1599</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;">Add To Cart</span></a>
+                </div>
+                <div class="data">
+                    <img src="productimg\4.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Gorkha</span>
+                        <h5>Gorkha wrist II</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <span class="fa fa half-star"></span> -->
+                        </div>
+                        <h4><s>Rs2000</s> Rs1799</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;"> Add To Cart</span></a>
+                </div>
+                <div class="data">
+                    <img src="productimg\13.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Rolex</span>
+                        <h5>GMT-Master II</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half"></span> 
+                        </div>
+                        <h4><s>Rs3000</s> Rs2599</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;">Add To Cart</span></a>
+                </div>
+                <div class="data">
+                    <img src="productimg\6.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Richard Mille</span>
+                        <h5>smart Mille</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half"></span>
+                        </div>
+                        <h4><s>Rs5555</s> Rs4800</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;">Add To Cart</span></a>
+                </div>
+                <div class="data">
+                    <img src="productimg\7.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Philippe</span>
+                        <h5>Patek Geneve</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <span class="fa fa-star"></span> -->
+                        </div>
+                        <h4><s>Rs7000</s> Rs6999</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;">Add To Cart</span></a>
+                </div>
+                <div class="data">
+                    <img src="productimg\8.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Carlier</span>
+                        <h5>Carlier a1 watch</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h4><s>Rs4999</s> Rs4000</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;">Add To Cart</span></a>
+                </div>
+                <div class="data">
+                    <img src="productimg\9.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Rolex</span>
+                        <h5>Rolex smartpro watch</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <span class="fa fa-star"></span> -->
+                        </div>
+                        <h4><s>Rs3500</s> Rs2990</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;">Add To Cart</span></a>
+                  
+                </div>
+                <div class="data">
+                    <img src="productimg\10.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Rolex</span>
+                        <h5>Rolex GMT-Master II</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half"></span>
+                        </div>
+                        <h4><s>Rs4000</s> Rs3500</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;">Add To Cart</span></a>
+                </div>
+                <div class="data">
+                    <img src="productimg\11.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Gorkha</span>
+                        <h5>Smart Gorkha</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h4><s>Rs5000</s> Rs4599</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;">Add To Cart</span></a>
+                </div>
+                <div class="data">
+                    <img src="productimg\12.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Rolex</span>
+                        <h5>Rolex GMT-Master II</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <span class="fa fa-star"></span> -->
+                        </div>
+                        <h4><s>Rs8000</s> Rs7999</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;"></span></a>
+                </div>
+                <div class="data">
+                    <img src="productimg\5.png" alt="">
+                    <div class="describe">
+                        <span id="brandname">Carlier</span>
+                        <h5>watch carlier</h5>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half"></span>
+                        </div>
+                        <h4><s>Rs2555</s> Rs1999</h4>
+                    </div>
+                    <a href=""><span class="fa fa-shopping-cart" style="color: #f10202;">Add To Cart</span></a>
+                </div>
+
+            </div>
+        </section>
+        <img src="img/banner.png" alt="" width="100%" height="100%">
+        <BR></BR>
+    </header>
+    <BR></BR>
+    <section id="page" class="list">
+        <a href="PRODUCTS.HTML">1</a>
+        <a href="productpage2.html">2</a>
+        <a href="productpage2.html"><i class="fa fa-long-arrow-right"></i></a>
+    </section>
+    <!-- </header> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-data">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h4>Links</h4>
+                    <!-- this is for important link -->
+                    <ul>
+
+                        <li><a href="blog1.html">Blog</a></li>
+                        <li><a href="PRODUCTS.HTML">Products</a></li>
+                        <li><a href="contactus.html">Contacts us</a></li>
+                        <li><a href="researches.html">Reasearch</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <!-- here use socail media link -->
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <div class="playstore">
+                        <br>
+                        <br>
+                        <h4>
+                            Download Now
+
+                        </h4>
+                        <p style="color: white;">From Play store or Apple Store</p>
+                        <div class="picplay">
+                            <img class="play" src="img/1000008419.jpg" alt="">
+                            <img class="play" src="img/1000008417.jpg" alt="">
+                        </div>
+                        <p style="color: white;">Payment Options</p>
+                        <img src="img/1000008418.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+        <footer style="text-align: center; color: white; font-family: 'Courier New', Courier, monospace;">© Copyright
+            2025 TRENDIO TIME</footer>
+
+    </footer>
+
+</body>
+
+</html>
